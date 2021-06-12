@@ -1,0 +1,31 @@
+/* transition between pages */
+@keyframes page_transition{
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+/* for modal */
+@keyframes bouncing {
+    0%{
+        transform-origin: bottom left;
+        transform: rotateZ(90deg);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes bouncingReverse {
+    0%{
+        transform-origin: bottom left;
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform-origin: bottom left;
+        transform: rotateZ(90deg);
+    }
+}
