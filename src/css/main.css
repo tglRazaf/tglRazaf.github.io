@@ -248,4 +248,11 @@ input:hover, textarea:hover, .button:hover {
   -webkit-transition: 1s ease;
   transition: 1s ease;
 }
+.footer{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 10px;
+
+}
 /*# sourceMappingURL=main.css.map */
