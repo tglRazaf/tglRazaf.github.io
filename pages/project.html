@@ -6,38 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/css/all.css">
     <link rel="stylesheet" href="../src/css/fontawesome.css">
+    <link rel="shortcut icon" href="../src/images/ei_1619360945703-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="../src/css/animation.css">
-    <title>Document</title>
+    <title>Stephano razafindramena</title>
 
     <style>
         body{
-            
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #434343;
+            color: #4a4a4a;
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 1.5;
             background-image: url('../src/images/Web\ 1280\ –\ 1.png');
             background-size: cover;
             background-repeat: no-repeat;
-            animation: page_transition 1s ease;
+            animation: page_transition 1s ease-out;
+        }
+        .header{
+            position: fixed;
+            top: 0px;
+            left: 0px;
         }
         .to-another-page{
-            position: absolute;
-            top: 10;
-            left: 10;
-            margin: 20px 0px;
+            margin: 5px 0px;
             outline: none;
             border: none;
             background-color: transparent;
+        }
+        .container{
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .card{
+            width: 300px;
+            border: 1px solid #d6d3d3;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px #434343;
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+        }
+        .card.for-mobile .card-header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .card.for-mobile .card-content .images{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .card.for-web .card-header{
+            border-bottom: 1px solid #4a4a4a;
+        }
+        a{
+            text-decoration: none;
+            color: #4a4a4a;
+        }
+        .card button{
+            color: #4a4a4a;
+            cursor: pointer;
+            background-color: whitesmoke;
+            outline: none;
+            border-radius: 3px;
+            border: 1px solid #4a4a4a;
         }
     </style>
 
 </head>
 <body>
-    <button class="to-another-page">
-        <a href="../index.html">
-            <img src="../src/images/iPhone 5-SE – 1.png" >
-        </i></a>
-    </button>
-    <a href="./src/js/index.js"><i class="fab fa-html5"></i></a>
-    
+    <div class="header">
+        <button class="to-another-page">
+            <a href="../index.html">
+                <img src="../src/images/iPhone 5-SE – 1.png" >
+            </i></a>
+        </button>
+    </div>
+    <div class="container">
+        <div class="card for-mobile">
+            <div class="card-header">
+                <div class="left-head">
+                    <img src="../src/images/launch_image.jpg" width="100" height="100">
+                </div>
+                <div class="right-head">
+                    <h1 class="title">Wiki-Dico</h1>
+                    <i class="fab fa-android"></i>
+                    <img src="../src/images/flutter_button_icon.png">
+                    <img src="../src/images/dart_colour_button_icon.png"><br>
+                    <form action="./app-release.apk" method="get">
+                       <button class="btn-rounded" type="submit">Tester</button> 
+                    </form>
+                </div>
+            </div>
+            <div class="card-content">
+                <h4>L'interface graphique : </h4>
+                <div class="images">
+                   <img src="../src/images/Screenshot_20210217-094330.png"> 
+                   <img src="../src/images/Screenshot_20210217-094344.png">
+                   <img src="../src/images/Screenshot_20210215-185206.png">
+                   <img src="../src/images/Screenshot_20210217-094352.png">
+                </div>
+                <h4>Description : </h4>
+                <p>C'est une application mobile faite avec flutter, du même genre que Wikipedia, mais avec des fonctionalités limités.</p>
+            </div>
+        </div>
+        <div class="card for-mobile">
+            <div class="card-header">
+                <div class="left-head">
+                    <img src="../src/images/file_type_flutter_icon_130599.png" width="100" height="100">
+                </div>
+                <div class="right-head">
+                    <h1 class="title">E-tady-Asa</h1>
+                    <i class="fab fa-android"></i>
+                    <img src="../src/images/flutter_button_icon.png">
+                    <img src="../src/images/dart_colour_button_icon.png">
+                    <i class="fab fa-node"></i>
+                    <img src="../src/images/mysql.svg" height="11"><br>
+                    <button class="btn-rounded">
+                        <a href="https://github.com/tglRazaf">Github</a></button>
+                </div>
+            </div>
+            <div class="card-content">
+                <h4>L'interface graphique : </h4>
+                <div class="images">
+                   <img src="../src/images/Screenshot_20210403-221605.png"> 
+                   <img src="../src/images/Screenshot_20210403-221719.png">
+                   <img src="../src/images/Screenshot_20210403-221730.png">
+                   <img src="../src/images/Screenshot_20210403-221806.png">
+                </div>
+                <h4>Description : </h4>
+                <p>C'est une application mobile de reseaux social, spécialiée pour le monde du travail, afin de faciliter la recherche d'emploie.</p>
+            </div>
+        </div>
+        <div class="card for-web">
+            <div class="card-header">
+                <img src="../src/images/portfolio.jpg">
+            </div>
+            <div class="card-content">
+                <center><h1 class="title">Mon portfolio</h1></center>
+                <p>Mon site personnel, où je montre mes projets ainsi que mes compétences.</p>
+                <h4>Technologies : </h4>
+                <center>
+                    <i class="fab fa-html5" aria-hidden="true"></i>
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-css3" aria-hidden="true"></i>
+                </center>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
